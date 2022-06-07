@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт квартир</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container"> 
+            <div class="burger">
+                <img src="icons/bars-solid.svg" alt="">
+            </div>
+            <div class="header__logo">
+                <img src="icons/main_logo.png" alt="logo">
+            </div>
+            <nav class="nav">
+                <hr>
+                <ul>
+                    <li class="nav__element">
+                        <a href="#prices">Цены</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#">Услуги</a></li>
+                    <li class="nav__element">
+                        <a href="#portfolio">Портфолио</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#sales">Акции</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#benefit">Преимущества</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#">Блог</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <a href="tel:+72332222222" class="header__phone">+7 (233) 222-22-22</a>
+                <span class="header__time">08:00 - 22:00, без выходных</span>
+            </div>
+            <button class="button" id="modal">Заказать звонок</button>
+        </div>
+        <hr>
+    </header>
+
+    <div class="sub-header">
+        <div class="container">
+            <nav class="sub-header__nav">
+                <ul>
+                    <li class="sub-header__item" id="first_item">
+                        <a href="#">Ремонт квартир
+                            <img src="icons/angle-down-solid.svg" alt="angle-down-solid">
+                        </a>
+                        
+                        <ul class="sub-header__sub-menu" id="first_sub-menu">
+                            <li class="sub-header__sub-menu__item">Черновой</li>
+                            <li class="sub-header__sub-menu__item">Косметический</li>
+                            <li class="sub-header__sub-menu__item">Капитальный</li>
+                            <li class="sub-header__sub-menu__item">Элитный</li>
+                            <li class="sub-header__sub-menu__item">В новостройках</li>
+                            <li class="sub-header__sub-menu__item">Студии</li>
+                            <li class="sub-header__sub-menu__item">Вторичное жилье</li>
+                        </ul>
+                    </li>
+                    <li class="sub-header__item" id="second_item">
+                        <a href="#">Дизайн интерьера
+                            <img src="icons/angle-down-solid.svg" alt="angle-down-solid">
+                        </a>
+                        <ul class="sub-header__sub-menu" id="second_sub-menu">
+                            <li class="sub-header__sub-menu__item">Дизайн кухни</li>
+                            <li class="sub-header__sub-menu__item">Дизайн спальни</li>
+                            <li class="sub-header__sub-menu__item">Дизайн гостинной</li>
+                            <li class="sub-header__sub-menu__item">Дизайн детской</li>
+                            <li class="sub-header__sub-menu__item">Дизайн санузла</li>
+                            <li class="sub-header__sub-menu__item">Дизайн коридора</li>
+                            <li class="sub-header__sub-menu__item">Дизайн балкона</li>
+                        </ul>
+                    </li>
+                    <li class="sub-header__item" id="third_item">
+                        <a href="#">Ремонт комнат
+                            <img src="icons/angle-down-solid.svg" alt="angle-down-solid">
+                        </a>
+                        <ul class="sub-header__sub-menu" id="third_sub-menu">
+                            <li class="sub-header__sub-menu__item">Кухни</li>
+                            <li class="sub-header__sub-menu__item">Спальни</li>
+                            <li class="sub-header__sub-menu__item">Гостинные</li>
+                            <li class="sub-header__sub-menu__item">Детские</li>
+                            <li class="sub-header__sub-menu__item">Санузлы</li>
+                            <li class="sub-header__sub-menu__item">Коридоры</li>
+                            <li class="sub-header__sub-menu__item">Балконы</li>
+                        </ul>
+                    </li>
+                    <li class="sub-header__item" id="forth_item">
+                        <a href="#">Дома и коттеджи</a>
+                    </li>
+                    <li class="sub-header__item" id="fifth_item">
+                        <a href="#">Прочие услуги</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+    </div>
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo__info">
+                <h1 class="promo__title">РЕМОНТ КВАРТИР <br> В МОСКВЕ И МО</h1>
+                <h2 class="promo__subtitle">от <span>2450</span> руб/м2</h2>
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="icons/hands.svg" alt="hands">
+                        <span>Оплата по факту приема работ</span>
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/concept.svg" alt="concept">
+                        <span>Замер и составление сметы БЕСПЛАТНО</span>
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/builder.svg" alt="builder">
+                        <span>Выезд сметчика </span>
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/list.svg" alt="list">
+                        <span>Гарантия 3 года</span>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="calculator">
+                <h3 class="calculator__title">РАССЧИТАЙТЕ стоимость ремонта</h3>
+                <h4 class="calculator__subtitle">Вид ремонта:</h4>
+                <div class="calculator__type">
+                    <label class="calculator__type__item calculator__type__item_active">
+                        <input class='remont' type="radio" name="remont" value="2450" checked> Косметический <br>
+                    </label>
+                    <label class="calculator__type__item">
+                         <input class='remont' type="radio" name="remont" value="4950"> Капитальный <br>
+                    </label>
+                    <label class="calculator__type__item">
+                        <input class='remont' type="radio" name="remont" value="5450"> Под ключ <br>
+                    </label>
+                    <label class="calculator__type__item">
+                        <input class='remont' type="radio" name="remont" value="7500"> Дизайнерский <br>
+                    </label>
+                </div>
+                <hr>
+                <h4 class="calculator__subtitle">Тип вашей недвижимости:</h4>
+                <div class="calculator__home">
+                    <label class="calculator__home__item calculator__home__item_active">
+                        <input class="home" type="radio" name="home" value="1.1" checked> Новостройка <br>
+                    </label>
+                    <label class="calculator__home__item">
+                        <input class='home ' type="radio" name="home" value="1.2"> Вторичное жилье <br>
+                    </label>
+                </div>
+                <hr id="desctop_hr">
+                <h4 class="calculator__subtitle">Количество комнат</h4>
+                <div class="calculator__rooms">
+                    <label class="calculator__rooms__item calculator__rooms__item_active">
+                        <input class="room" type="radio" name="room" value="1" checked> 1 <br>
+                    </label>
+                    <label class="calculator__rooms__item">
+                         <input class="room" type="radio" name="room" value="1.1"> 2 <br>
+                    </label>
+                    <label class="calculator__rooms__item">
+                        <input class="room" type="radio" name="room" value="1.2"> 3 <br>
+                    </label>
+                    <label class="calculator__rooms__item">
+                        <input class="room" type="radio" name="room" value="1.3"> 4 <br>
+                    </label>
+                </div>
+                <hr>
+                <h4 class="calculator__subtitle">Площадь, м<sup style="color: #595959 ;">2</sup> :</h4>
+                <div class="calculator__slider">
+                    <div class="calculator__slider__item calculator__slider__item_active">
+                        <input id="calc_slider" type="range" name="range" min="10" max="150" value="35" checked>
+                        <span class="calculator__slider__value"> 35</span>
+                    </div>
+                </div>
+                <div class="calculator__result">
+                    <div class="calculator__date">
+                        <span>Срок ремонта:</span>
+                        <span id="date">до 18 дней</span>
+                    </div>
+                    <div class="calculator__price">
+                        <span>Цена составит:</span>
+                        <span id="price">23<br>руб</span>
+                    </div>
+                </div>
+                <h4 class="calculator__subtitle calculator__subtitle_last ">Введите номер телефона</h4>
+                <div class="calculator__contact">
+                    <input required name='phone' class="calculator__tel" type="tel" placeholder="+38">
+                    <button class="button button_green-mini" id="main-succes">Заказать</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="prices" id="prices">
+        <div class="container">
+            <h2 class="title">Цены на ремонт</h2>
+            <div class="grid-container">
+                <div class="prices__item animate__animated animate__fadeIn wow">
+                    <div class="prices__item__header">
+                        <img class="prices__item__img" src="icons/icon-logo.png" alt="item_logo">
+                       <div>
+                            <h3 class="prices__item__title">Косметический</h3>
+                            <span class="prices__item__date">от 5 дней</span>
+                       </div>
+                    </div>
+                    <div class="prices__item__info">
+                        Такой тип ремонта подойдёт для того чтобы «освежить» ремонт в квартире: заменить покрытие стен, пола и потолка без предварительной подготовки
+                    </div>
+                    <hr>
+                    <h3 class="prices__item__subtitle">Демонтаж</h3>
+                    <ul class="prices__item__about">
+                        <li class="prices__item__tick">
+                            Демонтаж старых покрытий
+                        </li>
+                        <li class="prices__item__tick">
+                            Демонтаж старой электрики
+                        </li>
+                    </ul>
+                    <h3 class="prices__item__subtitle">Черновые работы</h3>
+                    <ul class="prices__item__about">
+                        <li class="prices__item__tick">
+                            Грунтовка стен и пола
+                        </li>
+                    </ul>
+                    <div class="prices__item__footer">
+                        <div class="prices__item__prices">
+                            <div class="prices__item__old">от <span>3 245</span> руб/м2</div>
+                            <div class="prices__item__new">от 2 450 руб/м2</div>
+                        </div>
+                        <button class="button button_green-medium">Получить смету</button>
+                    </div>
+                </div>
+
+                <div class="prices__item animate__animated animate__fadeIn wow">
+                    <div class="prices__item__header">
+                        <img class="prices__item__img" src="icons/icon-logo.png" alt="item_logo">
+                       <div>
+                            <h3 class="prices__item__title">Капитальный</h3>
+                            <span class="prices__item__date">от 14 дней</span>
+                       </div>
+                    </div>
+                    <div class="prices__item__info">
+                        Такой тип ремонта подойдет, если требуеться отремонтировать квартиру: выровнять стены, сделать стяжку полов, проложить инженерию и выполнить чистовую отделку
+                    </div>
+                    <hr>
+                    <h3 class="prices__item__subtitle">Демонтаж</h3>
+                    <ul class="prices__item__about">
+                        <li class="prices__item__tick">
+                            Демонтаж старых покрытий
+                        </li>
+                        <li class="prices__item__tick">
+                            Демонтаж старой электрики
+                        </li>
+                    </ul>
+                    <h3 class="prices__item__subtitle">Черновые работы</h3>
+                    <ul class="prices__item__about">
+                        <li class="prices__item__tick">
+                            Грунтовка стен и пола
+                        </li>
+                        <li class="prices__item__tick">
+                            Шпатлевка и штукатурка стен
+                        </li>
+                    </ul>
+                    <div class="prices__item__footer">
+                        <div class="prices__item__prices">
+                            <div class="prices__item__old">от <span>5 455</span> руб/м2</div>
+                            <div class="prices__item__new">от 4 950 руб/м2</div>
+                        </div>
+                        <button class="button button_green-medium">Получить смету</button>
+                    </div>
+                </div>
+
+                <div class="prices__item animate__animated animate__fadeIn wow">
+                    <div class="prices__item__header">
+                        <img class="prices__item__img" src="icons/icon-logo.png" alt="item_logo">
+                       <div>
+                            <h3 class="prices__item__title">Под ключ</h3>
+                            <span class="prices__item__date">от 11 дней</span>
+                       </div>
+                    </div>
+                    <div class="prices__item__info">
+                        Ремонт класса «евро» — капитальный ремонт с применением современных отделочных материалов и стандартов, включающий перепланировку
+                    </div>
+                    <hr>
+                    <h3 class="prices__item__subtitle">Демонтаж</h3>
+                    <ul class="prices__item__about">
+                        <li class="prices__item__tick">
+                            Демонтаж старых покрытий
+                        </li>
+                        <li class="prices__item__tick">
+                            Демонтаж старой электрики
+                        </li>
+                        <li class="prices__item__tick">
+                            Демонтаж дверей
+                        </li>
+                    </ul>
+                    <h3 class="prices__item__subtitle">Черновые работы</h3>
+                    <ul class="prices__item__about">
+                        <li class="prices__item__tick">
+                            Грунтовка стен и пола
+                        </li>
+                        <li class="prices__item__tick">
+                            Шпатлевка и штукатурка стен
+                        </li>
+                        <li class="prices__item__tick">
+                            Устройство наливных полов
+                        </li>
+                    </ul>
+                    <div class="prices__item__footer">
+                        <div class="prices__item__prices">
+                            <div class="prices__item__old">от <span>5 995</span> руб/м2</div>
+                            <div class="prices__item__new">от 5 450 руб/м2</div>
+                        </div>
+                        <button class="button button_green-medium">Получить смету</button>
+                    </div>
+                </div>
+
+                <div class="prices__item animate__animated animate__fadeIn wow">
+                    <div class="prices__item__header">
+                        <img class="prices__item__img" src="icons/icon-logo.png" alt="item_logo">
+                       <div>
+                            <h3 class="prices__item__title">Дизайнерский</h3>
+                            <span class="prices__item__date">от 20 дней</span>
+                       </div>
+                    </div>
+                    <div class="prices__item__info">
+                        Дизайнерский ремонт ориентирован для настоящих ценителей комфорта, эстетики и внутреннего удобства
+                    </div>
+                    <hr>
+                    <h3 class="prices__item__subtitle">Демонтаж</h3>
+                    <ul class="prices__item__about">
+                        <li class="prices__item__tick">
+                            Демонтаж старых покрытий
+                        </li>
+                        <li class="prices__item__tick">
+                            Демонтаж старой электрики
+                        </li>
+                        <li class="prices__item__tick">
+                            Демонтаж дверей
+                        </li>
+                    </ul>
+                    <h3 class="prices__item__subtitle">Черновые работы</h3>
+                    <ul class="prices__item__about">
+                        <li class="prices__item__tick">
+                            Грунтовка стен и пола
+                        </li>
+                        <li class="prices__item__tick">
+                            Шпатлевка и штукатурка стен
+                        </li>
+                        <li class="prices__item__tick">
+                            Устройство наливных полов
+                        </li>
+                        <li class="prices__item__tick">
+                            Услуги дизайнера
+                        </li>                        
+                    </ul>
+                    <div class="prices__item__footer">
+                        <div class="prices__item__prices">
+                            <div class="prices__item__old">от <span>9 800</span> руб/м2</div>
+                            <div class="prices__item__new">от 7 500 руб/м2</div>
+                        </div>
+                        <button class="button button_green-medium">Получить смету</button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="examples" id="portfolio">
+        <div class="container">
+            <h2 class="title">Примеры наших работ</h2>
+            <ul class="examples__tabs">
+                <li class="examples__tab examples__tab_active">
+                    Капитальный
+                </li>
+                <li class="examples__tab">
+                    Косметиеский
+                </li>
+                <li class="examples__tab">
+                    Под ключ
+                </li>
+                <li class="examples__tab">
+                    Студии
+                </li>
+                <li class="examples__tab">
+                    Черновой
+                </li>
+            </ul>
+            <div class="examples__content examples__content_active animate__animated animate__fadeInUp">
+                <div class="examples-carousel">
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                </div>
+                <div class="examples-descr">
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/dollar-sign-solid.svg" alt="">
+                            Сумма:</div>
+                        <div class="examples-descr__right">272 250 руб.</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/border-all-solid.svg" alt="">
+                            Площадь:</div>
+                        <div class="examples-descr__right">43 м2</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/calendar-solid.svg" alt="">
+                            Срок:</div>
+                        <div class="examples-descr__right">90 дней</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/house-chimney-solid.svg" alt="">
+                            Комнат:</div>
+                        <div class="examples-descr__right">3</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/location-dot-solid.svg" alt="">
+                            Адрес: </div>
+                        <div class="examples-descr__right">Кулика 18</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/file-lines-solid.svg" alt="">
+                            Перечень работ: </div>
+                        <div class="examples-descr__main">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у<br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="examples__content animate__animated animate__fadeInUp">
+                <div class="examples-carousel">
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                </div>
+                <div class="examples-descr">
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/dollar-sign-solid.svg" alt="">
+                            Сумма:</div>
+                        <div class="examples-descr__right">272 250 руб.</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/border-all-solid.svg" alt="">
+                            Площадь:</div>
+                        <div class="examples-descr__right">43 м2</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/calendar-solid.svg" alt="">
+                            Срок:</div>
+                        <div class="examples-descr__right">90 дней</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/house-chimney-solid.svg" alt="">
+                            Комнат:</div>
+                        <div class="examples-descr__right">3</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/location-dot-solid.svg" alt="">
+                            Адрес: </div>
+                        <div class="examples-descr__right">Кулика 18</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/file-lines-solid.svg" alt="">
+                            Перечень работ: </div>
+                        <div class="examples-descr__main">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у<br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="examples__content animate__animated animate__fadeInUp">
+                <div class="examples-carousel">
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                </div>
+                <div class="examples-descr">
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/dollar-sign-solid.svg" alt="">
+                            Сумма:</div>
+                        <div class="examples-descr__right">272 250 руб.</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/border-all-solid.svg" alt="">
+                            Площадь:</div>
+                        <div class="examples-descr__right">43 м2</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/calendar-solid.svg" alt="">
+                            Срок:</div>
+                        <div class="examples-descr__right">90 дней</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/house-chimney-solid.svg" alt="">
+                            Комнат:</div>
+                        <div class="examples-descr__right">3</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/location-dot-solid.svg" alt="">
+                            Адрес: </div>
+                        <div class="examples-descr__right">Кулика 18</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/file-lines-solid.svg" alt="">
+                            Перечень работ: </div>
+                        <div class="examples-descr__main">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у<br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="examples__content animate__animated animate__fadeInUp">
+                <div class="examples-carousel">
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                </div>
+                <div class="examples-descr">
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/dollar-sign-solid.svg" alt="">
+                            Сумма:</div>
+                        <div class="examples-descr__right">272 250 руб.</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/border-all-solid.svg" alt="">
+                            Площадь:</div>
+                        <div class="examples-descr__right">43 м2</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/calendar-solid.svg" alt="">
+                            Срок:</div>
+                        <div class="examples-descr__right">90 дней</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/house-chimney-solid.svg" alt="">
+                            Комнат:</div>
+                        <div class="examples-descr__right">3</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/location-dot-solid.svg" alt="">
+                            Адрес: </div>
+                        <div class="examples-descr__right">Кулика 18</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/file-lines-solid.svg" alt="">
+                            Перечень работ: </div>
+                        <div class="examples-descr__main">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у<br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="examples__content animate__animated animate__fadeInUp">
+                <div class="examples-carousel">
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                    <div class="examples-carousel__item">
+                        <img src="img/example.jpg" alt="example">
+                    </div>
+                </div>
+                <div class="examples-descr">
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/dollar-sign-solid.svg" alt="">
+                            Сумма:</div>
+                        <div class="examples-descr__right">272 250 руб.</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/border-all-solid.svg" alt="">
+                            Площадь:</div>
+                        <div class="examples-descr__right">43 м2</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/calendar-solid.svg" alt="">
+                            Срок:</div>
+                        <div class="examples-descr__right">90 дней</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/house-chimney-solid.svg" alt="">
+                            Комнат:</div>
+                        <div class="examples-descr__right">3</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/location-dot-solid.svg" alt="">
+                            Адрес: </div>
+                        <div class="examples-descr__right">Кулика 18</div>
+                    </div>
+                    <div class="examples-descr__item">
+                        <div class="examples-descr__left">
+                            <img src="icons/file-lines-solid.svg" alt="">
+                            Перечень работ: </div>
+                        <div class="examples-descr__main">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у<br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов</div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sales" id="sales">
+        <div class="container">
+            <h2 class="title">Акции</h2>
+            <div class="grid-container">
+                <div class="sale animate__animated animate__fadeIn wow">
+                    <h3 class="sale__title">Новоселам</h3>
+                    <div class="sale__descr">Специальная скидка для тех кто переехал не более года назад</div>
+                    <button class="button button_green-medium">Получить скидку</button>
+                </div>
+                <div class="sale animate__animated animate__fadeIn wow">
+                    <h3 class="sale__title">Молодоженам</h3>
+                    <div class="sale__descr">Спец.скидка если с момента регистрации прошло не более года</div>
+                    <button class="button button_green-medium">Получить скидку</button>
+                </div>
+                <div class="sale animate__animated animate__fadeIn wow">
+                    <h3 class="sale__title">Пенсионерам</h3>
+                    <div class="sale__descr">Специальная скидка для наших дорогих</div>
+                    <button class="button button_green-medium">Получить скидку</button>
+                </div>
+            </div>
+            <button class="button">Все акции</button>
+        </div>
+    </section>
+
+    <section class="how-work">
+        <div class="container">
+            <h2 class="title">Как мы работаем</h2>
+            <h3 class="subtitle">Вам понятен каждый этап: фиксированные сроки и цены, предоставляем все документы: накладные, гарантии, акты. Вы будете уверены в результате</h3>
+            <div class="grid-container">
+                <div class="how-work__item">
+                    <img src="icons/builder.svg" alt="builder" class="how-work__img">
+                    <div class="how-work__descr">Бесплатный
+                        выезд замерщика</div>
+                </div>
+                <div class="how-work__item">
+                    <img src="icons/concept1.svg" alt="concept" class="how-work__img">
+                    <div class="how-work__descr">Смета
+                        в день обращения</div>
+                </div>
+                <div class="how-work__item">
+                    <img src="icons/doc.svg" alt="doc" class="how-work__img">
+                    <div class="how-work__descr">Договор</div>
+                </div>
+                <div class="how-work__item">
+                    <img src="icons/list1.svg" alt="list" class="how-work__img">
+                    <div class="how-work__descr">Накладные
+                        материалы</div>
+                </div>
+                <div class="how-work__item">
+                    <img src="icons/camera.svg" alt="camera" class="how-work__img">
+                    <div class="how-work__descr">Контроль: фотоотчёт или видеонаблюдение</div>
+                </div>
+                <div class="how-work__item">
+                    <img src="icons/contract.svg" alt="contract" class="how-work__img">
+                    <div class="how-work__descr">Акт
+                        выполненных работ</div>
+                </div>
+                <div class="how-work__item">
+                    <img src="icons/hands.svg" alt="hand" class="how-work__img">
+                    <div class="how-work__descr">Акт приемки
+                        работ по договору</div>
+                </div>
+                <div class="how-work__item">
+                    <img src="icons/sertificate.svg" alt="sertificate" class="how-work__img">
+                    <div class="how-work__descr">Гарантия на
+                        выполненные работы</div>
+                </div>
+            </div>
+            <img class='how-work__bar' src="icons/bar.png" alt="bar">
+            <img class='how-work__bar_mini' src="img/mini-bar.png" alt="bar">
+            <img class='how-work__bar_mini' id="how-work__bar_mini1" src="img/mini-bar.png" alt="bar">
+            <img class='how-work__bar_big' src="icons/vertical-double-bar.png" alt="bar">
+        </div>
+    </section>
+
+    <section class="materials">
+        <div class="container">
+            <h2 class="title">Свой склад и шоурум материалов наших партнеров в Москве</h2>
+            <div class="grid-container">
+                <div class="materials__item">
+                    <img src="icons/doc.svg" alt="doc" class="materials__img">
+                    <div class="materials__descr">Прямой договор с поставщиками</div>
+                </div>
+                <div class="materials__item">
+                    <img src="icons/deliver.svg" alt="deliver" class="materials__img">
+                    <div class="materials__descr">Доставка и подьём в квартиру</div>
+                </div>
+                <div class="materials__item">
+                    <img src="icons/brick.svg" alt="brick" class="materials__img">
+                    <div class="materials__descr">300 тонн черновых и чистовых материалов</div>
+                </div>
+                <div class="materials__item">
+                    <img src="icons/carpet.svg" alt="carpet" class="materials__img">
+                    <div class="materials__descr">250 видов обоев
+                        25 видов ламината
+                        50 видов плитки и плинтуса</div>
+                </div>
+                <div class="materials__item">
+                    <img src="icons/broshure.svg" alt="broshure" class="materials__img">
+                    <div class="materials__descr">Выезд специалиста с каталогом материалов</div>
+                </div>
+            </div>
+            <div class="materials__photos animate__animated animate__fadeIn wow">
+                <img src="img/multi-color-fabric-texture-samples_1.png" alt="multi-color-fabric-texture-samples_1" class="materails__photo">
+                <img src="img/pile-textiles-background_1.png" alt="pile-textiles-background_1" class="materails__photo">
+            </div>
+        </div>
+    </section>
+    
+    <section class="control">
+        <h2 class="title">Многоуровневый контроль качества</h2>
+        <h3 class="subtitle">Ремонтируем квартиры без дефектов благодаря многоуровневому контролю качества:</h3>
+        <div class="control__content">
+            <img src="img/two-workers.jpg" alt="two-workers">
+            <div class="control__items">
+                <div class="control__item">
+                    <div class="control__num">
+                        01<span>/05</span>
+                    </div>
+                    <div class="control__title">
+                        Главный инженер
+                    </div>
+                    <div class="control__descr">
+                        Наблюдает за работой в режиме реального времени. Проверяет поставщиков материалов и оборудования
+                    </div>
+                </div>
+                <div class="control__item">
+                    <div class="control__num">
+                        02<span>/05</span>
+                    </div>
+                    <div class="control__title">
+                        Отдел технического конроля
+                    </div>
+                    <div class="control__descr">
+                        Проверяет качество работ на всех объектах-решает спорные ситуации
+                    </div>
+                </div>
+                <div class="control__item">
+                    <div class="control__num">
+                        03<span>/05</span>
+                    </div>
+                    <div class="control__title">
+                        Видео и фото контроль
+                    </div>
+                    <div class="control__descr">
+                        Онлайн-контроль хода ремонта 24/7
+                    </div>
+                </div>
+                <div class="control__item">
+                    <div class="control__num">
+                        04<span>/05</span>
+                    </div>
+                    <div class="control__title">
+                        Начальник участка
+                    </div>
+                    <div class="control__descr">
+                        Оценивает соответствие процесса ремонта условиям договора по срокам и стоимости.
+                    </div>
+                </div>
+                <div class="control__item">
+                    <div class="control__num">
+                        05<span>/05</span>
+                    </div>
+                    <div class="control__title">
+                        Прораб
+                    </div>
+                    <div class="control__descr">
+                        Приезжает на объект 4-5 раз в неделю, контролирует работу мастеров. Проверяет каждый этап по 120 пунктам соответсвия.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefit" id="benefit">
+        <div class="container">
+            <h2 class="title">Наши преимущества</h2>
+            <div class="grid-container">
+                <div class="benefit__item animate__animated animate__fadeInUp wow">
+                    <img src="icons/list1.svg" alt="list1" class="benefit__icon">
+                    <h3 class="benefit__title">Работа без предоплаты</h3>
+                    <div class="benefit__descr">Мы не берём предоплату. Вы платите за каждый этап работ после подписания акта.</div>
+                </div>
+                <div class="benefit__item animate__animated animate__fadeInUp wow">
+                    <img src="icons/best.svg" alt="best" class="benefit__icon">
+                    <h3 class="benefit__title">Стоимость ремонта не меняется</h3>
+                    <div class="benefit__descr">Прозрачный бюджет. Финальная смета фиксируется в согласованных актах.
+                    </div>
+                </div>
+                <div class="benefit__item animate__animated animate__fadeInUp wow">
+                    <img src="icons/builder.svg" alt="builder" class="benefit__icon">
+                    <h3 class="benefit__title">Мастера-славяне с опытом от 5 лет</h3>
+                    <div class="benefit__descr">Мастера - славяне. В штате 250 мастеров с опытом работы от 5 лет, 20 прорабов с опытом от 8 лет и инженерным образованием.
+                    </div>
+                </div>
+                <div class="benefit__item animate__animated animate__fadeInUp wow">
+                    <img src="icons/sertificate.svg" alt="sertificate" class="benefit__icon">
+                    <h3 class="benefit__title">За нами не переделывают</h3>
+                    <div class="benefit__descr">Качество работ для нас в приоритете. Даём гарантию на все виды работ.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="container">
+            <h2 class="title">Отзывы</h2>
+            <div class="grid-container">
+                <div class="review__item animate__animated animate__fadeInUp wow">
+                    <iframe class="review__video" src="https://www.youtube.com/embed/1Rl3oVeQpCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="review__descr">
+                        <span class="review__title">Капитальный ремонт
+                            <span>2х-комнтаная квартира</span>
+                        </span>
+                        <address class="review__address">Москва, р-н Фили-Давыдково, Малая Филевская улица, 68</address>
+                    </div>
+                </div>
+                <div class="review__item animate__animated animate__fadeInUp wow">
+                    <iframe class="review__video" src="https://www.youtube.com/embed/1Rl3oVeQpCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="review__descr">
+                        <span class="review__title">Капитальный ремонт
+                            <span>2х-комнтаная квартира</span>
+                        </span>
+                        <address class="review__address">Москва, р-н Фили-Давыдково, Малая Филевская улица, 68</address>
+                    </div>
+                </div>
+                <div class="review__item animate__animated animate__fadeInUp wow">
+                    <iframe class="review__video" src="https://www.youtube.com/embed/1Rl3oVeQpCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="review__descr">
+                        <span class="review__title">Капитальный ремонт
+                            <span>2х-комнтаная квартира</span>
+                        </span>
+                        <address class="review__address">Москва, р-н Фили-Давыдково, Малая Филевская улица, 68</address>
+                    </div>
+                </div>
+                <div class="review__item animate__animated animate__fadeInUp wow">
+                    <iframe class="review__video" src="https://www.youtube.com/embed/1Rl3oVeQpCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="review__descr">
+                        <span class="review__title">Капитальный ремонт
+                            <span>2х-комнтаная квартира</span>
+                        </span>
+                        <address class="review__address">Москва, р-н Фили-Давыдково, Малая Филевская улица, 68</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="team">
+        <h2 class="title">Наша команда</h2>
+        <div class="grid-container">
+            <div class="team__item">
+                Маляр-штукатур
+            </div>
+            <div class="team__item">
+                Прораб
+            </div>
+            <div class="team__item">
+                Сантехник
+            </div>
+            <div class="team__item">
+                Плиточник
+            </div>
+            <div class="team__item">
+                Укладчик полов
+            </div>
+            <div class="team__item">
+                Монтаж окон
+            </div>
+            <div class="team__item">
+                Монтаж потолка
+            </div>
+            <div class="team__item">
+                Сварщик
+            </div>
+        </div>
+        <img src="icons/bar.png" alt="bar" class="team__bar">
+
+        <div class="carousel">
+            <div class="carousel__item">
+                <div class="container">
+                    <img src="img/full-length-portrait-confident-young-male-builder_1.png" alt="" class="carousel__img">
+                    <div class="carousel__info">
+                        <h3 class="carousel__name">Имя Фамилия</h3>
+                        <h4 class="carousel__title">Маляр-штукатур выравниват и подготавливает</h4>
+                        <h4 class="carousel__subtitle">Благодаря Имя   наша команда выполняет полный спектр по </h4>
+                        <p class="carousel__descr">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у <br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="container">
+                    <img src="img/full-length-portrait-confident-young-male-builder_1.png" alt="" class="carousel__img">
+                    <div class="carousel__info">
+                        <h3 class="carousel__name">Имя Фамилия</h3>
+                        <h4 class="carousel__title">Маляр-штукатур выравниват и подготавливает</h4>
+                        <h4 class="carousel__subtitle">Благодаря Имя   наша команда выполняет полный спектр по </h4>
+                        <p class="carousel__descr">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у <br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="container">
+                    <img src="img/full-length-portrait-confident-young-male-builder_1.png" alt="" class="carousel__img">
+                    <div class="carousel__info">
+                        <h3 class="carousel__name">Имя Фамилия</h3>
+                        <h4 class="carousel__title">Маляр-штукатур выравниват и подготавливает</h4>
+                        <h4 class="carousel__subtitle">Благодаря Имя   наша команда выполняет полный спектр по </h4>
+                        <p class="carousel__descr">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у <br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="container">
+                    <img src="img/full-length-portrait-confident-young-male-builder_1.png" alt="" class="carousel__img">
+                    <div class="carousel__info">
+                        <h3 class="carousel__name">Имя Фамилия</h3>
+                        <h4 class="carousel__title">Маляр-штукатур выравниват и подготавливает</h4>
+                        <h4 class="carousel__subtitle">Благодаря Имя   наша команда выполняет полный спектр по </h4>
+                        <p class="carousel__descr">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у <br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="container">
+                    <img src="img/full-length-portrait-confident-young-male-builder_1.png" alt="" class="carousel__img">
+                    <div class="carousel__info">
+                        <h3 class="carousel__name">Имя Фамилия</h3>
+                        <h4 class="carousel__title">Маляр-штукатур выравниват и подготавливает</h4>
+                        <h4 class="carousel__subtitle">Благодаря Имя   наша команда выполняет полный спектр по </h4>
+                        <p class="carousel__descr">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у <br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="container">
+                    <img src="img/full-length-portrait-confident-young-male-builder_1.png" alt="" class="carousel__img">
+                    <div class="carousel__info">
+                        <h3 class="carousel__name">Имя Фамилия</h3>
+                        <h4 class="carousel__title">Маляр-штукатур выравниват и подготавливает</h4>
+                        <h4 class="carousel__subtitle">Благодаря Имя   наша команда выполняет полный спектр по </h4>
+                        <p class="carousel__descr">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у <br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="container">
+                    <img src="img/full-length-portrait-confident-young-male-builder_1.png" alt="" class="carousel__img">
+                    <div class="carousel__info">
+                        <h3 class="carousel__name">Имя Фамилия</h3>
+                        <h4 class="carousel__title">Маляр-штукатур выравниват и подготавливает</h4>
+                        <h4 class="carousel__subtitle">Благодаря Имя   наша команда выполняет полный спектр по </h4>
+                        <p class="carousel__descr">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у <br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <div class="container">
+                    <img src="img/full-length-portrait-confident-young-male-builder_1.png" alt="" class="carousel__img">
+                    <div class="carousel__info">
+                        <h3 class="carousel__name">Имя Фамилия</h3>
+                        <h4 class="carousel__title">Маляр-штукатур выравнивает и подготавливает</h4>
+                        <h4 class="carousel__subtitle">Благодаря Имя   наша команда выполняет полный спектр по </h4>
+                        <p class="carousel__descr">Штукатурка стен по маякам<br>
+                            Грунтовка стен и потолка<br>
+                            Монтаж натяжных потолков<br>
+                            Шпатлёвка стен под обои<br>
+                            Окраске стен<br>
+                            Укладка плитки в с/у <br>
+                            Прокладка электрики<br>
+                            Установка плинтусов и откосов
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="in-work">
+        <h2 class="title">Наши мастера в работе</h2>
+        <div class="carousel-1">
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+            <div class="carousel-1__item">
+                <div class="container">
+                    <img src="img/builder_photo1.jpg" alt="" class="carousel-1__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="companies">
+        <div class="container">
+            <div class="companies__info">
+                <h3 class="companies__title">Только лучшие поставщики</h3>
+                <div class="companies__descr">В нашей работе мы используем самые качественные и проверенные годами материалы</div>
+                <div class="companies__block">
+                    <div class="companies__sale">
+                        <div class="companies__sertificate">Получите бесплатный сертификат на чистовые материалы номиналом:</div>
+                        <div class="companies__price">30 000</div>
+                    </div>
+                    <button class="button button_green-medium" id="modal1">Оставить заявку</button>
+                </div>
+            </div>
+            <div class="companies__logos">
+                <div class="companies__logo">
+                    <img src="icons/knauf.svg" alt="">
+                </div>
+                <div class="companies__logo">
+                    <img src="icons/rehau.svg" alt="">
+                </div>
+                <div class="companies__logo">
+                    <img src="icons/roca.svg" alt="">
+                </div>
+                <div class="companies__logo">
+                    <img src="icons/rasch.svg" alt="">
+                </div>
+                <div class="companies__logo">
+                    <img src="icons/grohe.svg" alt="">
+                </div>
+                <div class="companies__logo">
+                    <img src="icons/cersanit.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="questions">
+        <div class="container">
+            <h2 class="title">Вопросы и ответы</h2>
+        <h3 class="subtitle">Знаем, о чем вы думаете прямо сейчас</h3>
+        <div class="qustion__block">
+            <ul class="questions__list">
+                <li class="questions__item"><span class="plus">+</span><span class="minus">-</span>Сколько лет работает компания?
+                    <ul>
+                        <hr>
+                        <li class="questions__answer">Наша компания стабильно работает уже более 10 лет!</li>
+                    </ul>
+                </li>
+                <li class="questions__item"><span class="plus">+</span><span class="minus">-</span>Сколько человек работает в “МаксПрофф”?
+                    <ul>
+                        <hr>
+                        <li class="questions__answer">Наша команда насчитывает около 100 мастеров в различных сферах.</li>
+                    </ul>
+                </li>
+                <li class="questions__item"><span class="plus">+</span><span class="minus">-</span>Можно ли приехать к вам, что бы познакомиться?
+                    <ul>
+                        <hr>
+                        <li class="questions__answer">Конечно! Будем рады видеть Вас в офисе по адресу: Москва, Малая Филевская улица, 121</li>
+                    </ul>
+                </li>
+                <li class="questions__item"><span class="plus">+</span><span class="minus">-</span>Какие гарантии дает компания и на какие работы они распространяются?
+                    <ul>
+                        <hr>
+                        <li class="questions__answer">Мы даем 100-процентную гарантию строком до 10лет на все виды работ.</li>
+                    </ul>
+                </li>
+                <li class="questions__item"><span class="plus">+</span><span class="minus">-</span>Заключается ли договор?
+                    <ul>
+                        <hr>
+                        <li class="questions__answer">Да, конечно. Наша компания работает исключительно на основании всех нужных договоров</li>
+                    </ul>
+                </li>
+                <li class="questions__item"><span class="plus">+</span><span class="minus">-</span>Когда готовы приступить к работе?
+                    <ul>
+                        <hr>
+                        <li class="questions__answer">Приступаем к работе на следующий день после подписания договора!</li>
+                    </ul>
+                </li>
+                <li class="questions__item"><span class="plus">+</span><span class="minus">-</span>Кто закупает материал?
+                    <ul>
+                        <hr>
+                        <li class="questions__answer">Все материалы закупаюься нашей компанией. Но, если у Вас есть желание, то Вы можете закупить их сами!</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <section class="consult">
+        <div class="container">
+            <div class="consult__need">Нужна консультация?</div>
+            <div class="consult__text">Подробно расскажем о наших услугах, видах работ и типовых проектах, рассчитаем стоимость и подготовим индивидуальное предложение!</div>
+            <button class="button button_rounded" id="modal2">Оставить заявку</button>
+        </div>
+    </section>
+
+    <section class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__info">
+                с  2021 «MaxProff» 
+                <a href="#">Правовая информация</a>
+            </div>
+            <div class="footer__icons">
+                <img src="icons/facebook-f-brands.svg" alt="" class="footer__icon">
+                <img src="icons/youtube-brands.svg" alt="" class="footer__icon">
+                <img src="icons/instagram-brands.svg" alt="" class="footer__icon">
+                <img src="icons/telegram-brands.svg" alt="" class="footer__icon">
+                <img src="icons/vk-brands.svg" alt="" class="footer__icon">
+                <img src="icons/odnoklassniki-brands.svg" alt="" class="footer__icon">
+            </div>
+            <div class="footer__offert">
+                Сайт не является публичной офертой <br>и носит информационный характер
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+72332222222">+7 (233) 222-22-22</a>
+                <a href="mailto:maxproff@gmail.com">maxproff@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="mobile">
+        <div class="mobile-overlay animate__animated"></div>
+        <div class="mobile-menu animate__animated">
+            <div class="modal-window__cross modal-window__cross_mobile">&times;</div>
+            <nav class="sub-header__nav">
+                <ul>
+                    <li class="sub-header__item" id="first_item_mobile">
+                        <a href="#">Ремонт квартир
+                            <img src="icons/angle-down-solid.svg" alt="angle-down-solid">
+                        </a>
+                        
+                        <ul class="sub-header__sub-menu" id="first_sub-menu_mobile">
+                            <li class="sub-header__sub-menu__item">Черновой</li>
+                            <li class="sub-header__sub-menu__item">Косметический</li>
+                            <li class="sub-header__sub-menu__item">Капитальный</li>
+                            <li class="sub-header__sub-menu__item">Элитный</li>
+                            <li class="sub-header__sub-menu__item">В новостройках</li>
+                            <li class="sub-header__sub-menu__item">Студии</li>
+                            <li class="sub-header__sub-menu__item">Вторичное жилье</li>
+                        </ul>
+                    </li>
+                    <li class="sub-header__item" id="second_item_mobile">
+                        <a href="#">Дизайн интерьера
+                            <img src="icons/angle-down-solid.svg" alt="angle-down-solid">
+                        </a>
+                        <ul class="sub-header__sub-menu" id="second_sub-menu_mobile">
+                            <li class="sub-header__sub-menu__item">Дизайн кухни</li>
+                            <li class="sub-header__sub-menu__item">Дизайн спальни</li>
+                            <li class="sub-header__sub-menu__item">Дизайн гостинной</li>
+                            <li class="sub-header__sub-menu__item">Дизайн детской</li>
+                            <li class="sub-header__sub-menu__item">Дизайн санузла</li>
+                            <li class="sub-header__sub-menu__item">Дизайн коридора</li>
+                            <li class="sub-header__sub-menu__item">Дизайн балкона</li>
+                        </ul>
+                    </li>
+                    <li class="sub-header__item" id="third_item_mobile">
+                        <a href="#">Ремонт комнат
+                            <img src="icons/angle-down-solid.svg" alt="angle-down-solid">
+                        </a>
+                        <ul class="sub-header__sub-menu" id="third_sub-menu_mobile">
+                            <li class="sub-header__sub-menu__item">Кухни</li>
+                            <li class="sub-header__sub-menu__item">Спальни</li>
+                            <li class="sub-header__sub-menu__item">Гостинные</li>
+                            <li class="sub-header__sub-menu__item">Детские</li>
+                            <li class="sub-header__sub-menu__item">Санузлы</li>
+                            <li class="sub-header__sub-menu__item">Коридоры</li>
+                            <li class="sub-header__sub-menu__item">Балконы</li>
+                        </ul>
+                    </li>
+                    <li class="sub-header__item" id="forth_item_mobile">
+                        <a href="#">Дома и коттеджи</a>
+                    </li>
+                    <li class="sub-header__item" id="fifth_item_mobile">
+                        <a href="#">Прочие услуги</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav">
+                <ul>
+                    <li class="nav__element">
+                        <a href="#prices">Цены</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#">Услуги</a></li>
+                    <li class="nav__element">
+                        <a href="#portfolio">Портфолио</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#sales">Акции</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#benefit">Преимущества</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#">Блог</a>
+                    </li>
+                    <li class="nav__element">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="call">
+                <div class="header__contact">
+                    <a href="tel:+72332222222" class="header__phone">+7 (233) 222-22-22</a>
+                    <span class="header__time">08:00 - 22:00, без выходных</span>
+                </div>
+                <button class="button" id="modal">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="modal-window" id="consulting">
+            <div class="modal-window__cross">&times;</div>
+            <div class="modal-window__subtitle">Заполните форму заявки</div>
+            <div class="modal-window__description">и мы обязательно перезвоним вам!</div>
+            <form class="feed-form" action="#">
+                <input required name="name" type="text" placeholder="Ваше имя">
+                <input required name="phone" type="tel" placeholder="Ваш телефон">
+                <input required name="email" type="email" placeholder="Ваш E-mail">
+                <button class="button button_green-medium" id="modal-succes">Заказать звонок</button>
+            </form>
+        </div>
+
+        <div class="modal-window modal-window_mini " id="thanks">
+            <div class="modal-window__cross">&times;</div>
+            <div class="modal-window__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal-window__description">Наш менеджер свяжется с вами 
+                в ближайшее время!</div> 
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
